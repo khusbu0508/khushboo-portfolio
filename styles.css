@@ -19,3 +19,56 @@ h2{color:var(--text);margin-top:22px}
 .site-footer{text-align:center;padding:18px 0;border-top:1px solid #08111a;color:var(--muted);margin-top:30px}
 a{color:var(--accent)}
 @media (max-width:600px){.container{padding:18px}}
+
+/* --- Small typography & spacing polish --- */
+html, body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  max-width: 960px; /* slightly wider for better layout on desktop */
+  padding: 32px;
+}
+
+.subtitle {
+  font-size: 15px;    /* slightly larger */
+  color: #a6b8cf;     /* softer muted color for readability */
+  margin-top: 6px;
+  line-height: 1.45;
+}
+
+/* Section headings */
+h2 {
+  font-size: 20px;
+  letter-spacing: 0.2px;
+  margin-top: 26px;
+  margin-bottom: 12px;
+  color: #e8f4ff;
+}
+
+/* Project card improvements */
+.projects article h3 {
+  margin: 0 0 6px 0;
+  font-size: 16px;
+  color: #ffffff;
+}
+.projects article p { 
+  color: #cfe6ff;
+  line-height: 1.45;
+  margin: 6px 0;
+}
+
+/* Subtle card hover effect to guide the eye */
+.projects article {
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+.projects article:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(2,6,23,0.55);
+}
+
+/* Footer spacing tweak */
+.site-footer {
+  padding: 22px 0;
+}
